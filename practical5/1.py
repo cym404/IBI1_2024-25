@@ -27,6 +27,6 @@ plt.xlabel("Programming Languages")
 plt.ylabel("Precentage of Users")
 plt.title("popularity of top 5 programming languages")
 plt.show()
-input_language="Python"#input Python as the selected language
+input_language=input(str("PLEASE INPUT A PROGRAMMING LANGUAGE"))#input Python as the selected language
 percentage=language_percentage.get(input_language)
-print("python",percentage)
+print("THE PRECENTAGE of",input_language,"is",percentage)
