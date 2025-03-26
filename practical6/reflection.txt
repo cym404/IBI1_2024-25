@@ -1,0 +1,4 @@
+In SIR model programming, the basic model was easy, but extensions like vaccination and 2D models were challenging. 
+I loved visualizing disease spread by adjusting parameters.
+Crucially, I grasped the probabilistic nature, with different runs yielding varied results, 
+indicating real - world uncertainty. This practice sharpened my understanding of SIR models and programming skills.
