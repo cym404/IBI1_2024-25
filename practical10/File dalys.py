@@ -12,7 +12,7 @@ tenth_year=afghenistan_first_10_years.iloc[9]
 print(tenth_year)
 
 dalys_1990=dalys_data[dalys_data["Year"]==1990]
-print(dalys_1990.head())
+print(dalys_1990)
 
 uk = dalys_data.loc[dalys_data["Entity"]=="United Kingdom", ["DALYs", "Year"]]
 france = dalys_data.loc[dalys_data["Entity"]=="France", ["DALYs", "Year"]]
