@@ -14,10 +14,10 @@ print(tenth_year)
 dalys_1990=dalys_data[dalys_data["Year"]==1990]
 print(dalys_1990.head())
 
-uk = dalys_data.loc[dalys_data.Entity=="United Kingdom", ["DALYs", "Year"]]
-france = dalys_data.loc[dalys_data.Entity=="France", ["DALYs", "Year"]]
-uk_mean=uk["DALKS"].mean
-france_mean=france["DALKS"].mean
+uk = dalys_data.loc[dalys_data["Entity"]=="United Kingdom", ["DALYs", "Year"]]
+france = dalys_data.loc[dalys_data["Entity"]=="France", ["DALYs", "Year"]]
+uk_mean=uk["DALYs"].mean()
+france_mean=france["DALYs"].mean()
 if uk_mean>france_mean:
     print("uk is bigger")
 else:
@@ -28,14 +28,14 @@ plt.plot(uk["Year"], uk["DALYs"], 'b+', label="United Kingdom DALYs")
 plt.title("UK DALYs Over Time")
 plt.xlabel("Year")
 plt.ylabel("DALYs")
-plt.xticks(uk["Year"], rotation=-90)  # 旋转x轴标签避免重叠
+plt.xticks(uk["Year"], rotation=-90)  
 plt.legend()
 plt.grid(True)
 plt.show()
 
 china_data = dalys_data[dalys_data["Entity"] == "China"][["DALYs", "Year"]]
 plt.figure(figsize=(10, 6))
-plt.plot(uk_data["Year"], uk_data["DALYs"], 'b-', label="UK")
+plt.plot(uk["Year"], uk["DALYs"], 'b-', label="UK")
 plt.plot(china_data["Year"], china_data["DALYs"], 'r-', label="China")
 plt.title("DALYs Comparison: China vs UK")
 plt.xlabel("Year")
