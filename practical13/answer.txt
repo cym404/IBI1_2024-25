@@ -1,0 +1,11 @@
+lenth of human SOD2	protein is 222, and it's subcellular localisation is Mitochondrion matrix
+
+range	of	percentage	identities	in	the	reported	online	BLAST	results: 83.8 to 100%
+
+The	alignment	score	and	percentage	of	identical	amino	acids	for	each	of	the	
+three	comparisons	that	you	performed	using	Python	:
+ human-mouse: score=1097, identity=90.09009009009009%
+ human-random: socre=-260, identity=2.7027027027027026%
+ mouse-random: score=-263, identity=2.7027027027027026%
+
+ the human COD2 and mouse COD2 are 	most closely related
